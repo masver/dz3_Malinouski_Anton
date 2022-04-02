@@ -16,6 +16,9 @@ html {
     font-style: normal;
 } 
 
+img{
+    max-width: 100%;
+}
 .contaiiner {
     max-width: 1200px;
     padding: 0 15px;
@@ -23,12 +26,14 @@ html {
 }
 
 .subtitle {
-
+    
+    margin-top:20px;
     span {
 
     }
 
 }
+
 
 @import './components/categories.scss';
 @import './components/slider.scss';

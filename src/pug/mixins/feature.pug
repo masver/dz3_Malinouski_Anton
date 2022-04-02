@@ -1,0 +1,15 @@
+mixin feature(args={})
+    div.feature__row
+        div.feature__sale
+
+        img(src=args.img, alt="feature").feature__img
+        div.feature-item__content
+            span.feature-item__stock=args.stock
+            span.feature-item__text=args.text
+            span.feature-item__price=args.price
+        div.feature-basket
+            img(src=args.minus, alt="minus").feature-basket__minus
+            span.feature-basket__number=args.number
+            img(src=args.plus, alt="plus").feature-basket__plus
+            img(src=args.basket, alt="basket").feature-basket__basket
+        
