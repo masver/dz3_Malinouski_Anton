@@ -1,5 +1,6 @@
 @import './main/reset.scss';
 @import './main/vars.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -37,3 +38,4 @@ img{
 
 @import './components/categories.scss';
 @import './components/slider.scss';
+@import './components/top-featured.scss';

@@ -1,7 +1,8 @@
 mixin feature(args={})
     div.feature__row
         div.feature__sale
-
+            span.feature__discount=args.discount
+            img(src=args.favourite, alt="favourite").feature__favourite
         img(src=args.img, alt="feature").feature__img
         div.feature-item__content
             span.feature-item__stock=args.stock
