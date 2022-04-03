@@ -1,16 +1,20 @@
 mixin feature(args={})
-    div.feature__row
+    div.feature
         div.feature__sale
             span.feature__discount=args.discount
             img(src=args.favourite, alt="favourite").feature__favourite
-        img(src=args.img, alt="feature").feature__img
-        div.feature-item__content
-            span.feature-item__stock=args.stock
-            span.feature-item__text=args.text
-            span.feature-item__price=args.price
-        div.feature-basket
-            img(src=args.minus, alt="minus").feature-basket__minus
-            span.feature-basket__number=args.number
-            img(src=args.plus, alt="plus").feature-basket__plus
-            img(src=args.basket, alt="basket").feature-basket__basket
+        a(href="#") 
+            img(src=args.img, alt="feature").feature__img
+        div.feature__content
+            span.feature__stock=args.stock
+            a(href="#").feature__text=args.text
+            span.feature__price=args.price
+        div.feature__basket
+            button.feature__minus
+                img(src=args.minus, alt="minus")
+            span.feature__number=args.number
+            button.feature__plus
+                img(src=args.plus, alt="plus")
+            button.feature__basket-btn
+                img(src=args.basket, alt="basket")
         

@@ -7,21 +7,16 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="./assets/css/vendors.min.css")
         link(rel="stylesheet", href="./assets/css/app.css")
-        link(rel='preconnect' href='https://fonts.googleapis.com')
-        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
-        link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap' rel='stylesheet')
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     body
         //- img(src="./assets/imgs/logo.png", alt="")
         include ./components/slider.pug
         .container
             include ./components/categories.pug
-            script(src="./assets/js/vendors.min.js")
-            script(src="./assets/js/app.js")
-        .container
             include ./components/top-featured.pug
-            script(src="./assets/js/vendors.min.js")
-            script(src="./assets/js/app.js")
-        .container
             include ./components/best-values.pug
-            script(src="./assets/js/vendors.min.js")
-            script(src="./assets/js/app.js")
+        
+        script(src="./assets/js/vendors.min.js")
+        script(src="./assets/js/app.js")
