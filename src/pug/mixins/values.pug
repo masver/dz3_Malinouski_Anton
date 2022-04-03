@@ -5,3 +5,9 @@ mixin values(args={})
             span.values-one__item=args.item
             span.values-one__discount=args.discount
             button.values-one__button SHOP NOW
+mixin values_two(args={})
+    div.values-two
+        img(src=args.img, alt="values").values-two__img
+        div.values-two__text
+            span.values-two__item=args.item
+            button.values-two__button USE CODE: COMBOSUPERR2A
